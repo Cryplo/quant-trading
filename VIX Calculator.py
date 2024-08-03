@@ -16,7 +16,7 @@ import dateutil
 import decimal
 import os
 import numpy as np
-os.chdir('K:/ecole/github/televerser/données')
+#os.chdir('K:/ecole/github/televerser/données')
 
 
 # In[2]:
@@ -374,9 +374,9 @@ def vix_calculator(df,cmt_rate,calendar,
 def main():
 
     #read data
-    df=pd.read_csv('henry hub european options.csv')
-    calendar=pd.read_csv('cme holidays.csv')
-    cmt_rate=pd.read_csv('treasury yield curve rates.csv')
+    df=pd.read_csv('data\henry hub european options.csv')
+    calendar=pd.read_csv('data\cme holidays.csv')
+    cmt_rate=pd.read_csv('data\\treasury yield curve rates.csv')
 
     #datetime format
     df['futures-expirationDate']=pd.to_datetime(df['futures-expirationDate'])
